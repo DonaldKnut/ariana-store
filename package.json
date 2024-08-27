@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "@auth/mongodb-adapter": "^3.4.2",
     "@auth/prisma-adapter": "^2.4.2",
