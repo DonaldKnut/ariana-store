@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        color: #3f3210;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .header {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaea;
+        background-color: #695f40; /* Dark Gold */
+        color: #ffd700; /* Light Gold */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .header img {
+        max-width: 100px;
+      }
+      .header h2 {
+        margin: 10px 0 0;
+        font-size: 24px;
+      }
+      .content {
+        padding: 20px;
+        color: #3f3210; /* Gold color */
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        color: #6d602f;
+        font-size: 14px;
+        border-top: 1px solid #eaeaea;
+        margin-top: 20px;
+        background-color: #846b31; /* Medium Gold */
+        color: #fff;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+      .footer p {
+        margin: 0;
+      }
+      @media (max-width: 480px) {
+        .container {
+          padding: 10px;
+        }
+        .header,
+        .footer {
+          padding: 15px;
+        }
+        .header img {
+          max-width: 80px;
+        }
+        .header h2 {
+          font-size: 20px;
+        }
+        .content {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="<%= logoUrl %>" alt="Ariana Diaries Logo" />
+        <h2>Thank you for subscribing!</h2>
+      </div>
+      <div class="content">
+        <p>Hi <%= email %>,</p>
+        <p>
+          Thank you for subscribing to our newsletter. We're excited to have you
+          on board!
+        </p>
+        <p>
+          You'll receive the latest news, updates, and exclusive content
+          directly in your inbox.
+        </p>
+        <p>Best regards,</p>
+        <p>Ariana Diaries Team</p>
+      </div>
+      <div class="footer">
+        <p>&copy; 2024 Ariana Diaries. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

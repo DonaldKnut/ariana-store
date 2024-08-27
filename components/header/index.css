@@ -1,0 +1,60 @@
+/* Ensure the submenu stays visible while hovering over it or its parent */
+.group:hover .sub-menu,
+.sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+/* Default state for submenu */
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+/* Ensure the chevron rotates when hovered */
+.group:hover .chevron-down {
+  transform: rotate(180deg);
+}
+
+/* Display rules for avatar and session links */
+@media (min-width: 368px) {
+  .navbar-button {
+    display: none;
+  }
+
+  .login_home-button {
+    display: none;
+  }
+}
+
+@media (max-width: 444px) {
+  .avatar-img {
+    display: none;
+  }
+
+  .mobile-session_links {
+    display: flex;
+  }
+}
+
+@media (min-width: 783px) {
+  .mobile-session_links {
+    display: flex;
+  }
+}
+
+@media (min-width: 1028px) {
+  .navbar-button {
+    display: flex;
+  }
+
+  .login_home-button {
+    display: flex;
+  }
+
+  .mobile-session_links {
+    display: none;
+  }
+}
